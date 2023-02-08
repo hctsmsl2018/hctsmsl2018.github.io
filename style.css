@@ -1,0 +1,20 @@
+h1 {
+    font-size: 5em;
+}
+
+#club_pic {
+    height: 400px;
+}
+
+.fellowship-icon {
+    height: 50px;
+}
+
+body {
+    color: teal;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
