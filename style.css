@@ -67,6 +67,21 @@ h3 {
     display: flex;
 }
 
+.proj-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proj-links {
+    display: flex;
+}
+
+.proj-links img {
+    height: 30;
+    width: 30;
+    margin: 0 6;
+}
+
 ul {
     list-style-type: none;
 }
