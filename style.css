@@ -4,26 +4,67 @@ h1 {
 
 h2 {
     color: crimson;
+    font-size: 2em;
 }
 
-h1, h2 {
-    text-align: center;
+h3 {
+    margin-top: 0;
 }
 
-img {
-    width: 300px;
+.section {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#image_container {
+.project {
+    background-color: rgb(255, 196, 107);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    width: 360px;
+    padding: 30px;
+}
+
+.proj-img {
+    width: 360px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#portrait {
     width: 300px;
     height: 300px;
-    overflow: hidden;
     border-radius: 50%;
-    margin: auto;
 }
 
-.experiance {
+#top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, cyan, lime);
+}
+
+#projects {
+    background-image: linear-gradient(to bottom right, cyan, lime);
+}
+
+.experience {
     margin-left: 40px;
+}
+
+#about-description {
+    font-size: 1.5em;
+}
+
+#resume-link {
+    margin-top: 50px;
+}
+
+#about-content {
+    display: flex;
 }
 
 ul {
@@ -31,26 +72,42 @@ ul {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, cyan, lime);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0;
+    min-width: 525px;
 }
 
 a {
     text-decoration: none;
 }
 
-@media (max-height: 350px) {
-    img {
-        width: 200px;
+footer {
+    background-color: rgb(255, 195, 172);
+    display: flex;
+}
+
+footer img {
+    height: 100;
+    width: 100;
+    margin: 20px;
+}
+
+
+@media (min-width: 850px) {
+    #about-content {
+        align-items: center;
     }
 
-    #image_container {
-        width: 200px;
-        height: 200px;
+    #portrait {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 849px) {
+    #about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
